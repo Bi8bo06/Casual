@@ -2,7 +2,6 @@ package webview.com.mywebview;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.Window;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -17,8 +16,8 @@ public class MainActivity extends AppCompatActivity {
 
         mWebView = (WebView) findViewById(R.id.webview);
 
-        mWebView.loadUrl("http://222.240.51.117:8081");
-//        mWebView.loadUrl("http://www.baidu.com");
+//        mWebView.loadUrl("http://222.240.51.117:8081");
+        mWebView.loadUrl("http://www.baidu.com");
 
         WebSettings webSettings = mWebView.getSettings();
         webSettings.setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK);
